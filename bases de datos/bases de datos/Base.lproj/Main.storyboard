@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="NOmbre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94e-lE-rg9">
+                                <rect key="frame" x="81" y="63" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Direccion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22U-Bz-fra">
+                                <rect key="frame" x="81" y="126" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Telefono" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYU-qm-5Zf">
+                                <rect key="frame" x="81" y="192" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gJI-Bl-oEJ">
+                                <rect key="frame" x="217" y="63" width="367" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T88-mr-Hg8">
+                                <rect key="frame" x="217" y="117" width="367" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aki-Yk-mOD">
+                                <rect key="frame" x="217" y="183" width="367" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ1-zM-mv6">
+                                <rect key="frame" x="127" y="272" width="56" height="30"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guardar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zY1-hf-YnU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ne-3a-c1X">
+                                <rect key="frame" x="414" y="272" width="67" height="30"/>
+                                <state key="normal" title="Encontrar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="encontrar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SGM-Pc-Bgy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hZ1-zM-mv6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="111" id="3o1-oE-Ccr"/>
+                            <constraint firstItem="hZ1-zM-mv6" firstAttribute="top" secondItem="TYU-qm-5Zf" secondAttribute="bottom" constant="59" id="5JW-Dm-Fve"/>
+                            <constraint firstItem="T88-mr-Hg8" firstAttribute="leading" secondItem="22U-Bz-fra" secondAttribute="trailing" constant="63" id="5dL-zV-IIj"/>
+                            <constraint firstItem="Aki-Yk-mOD" firstAttribute="leading" secondItem="TYU-qm-5Zf" secondAttribute="trailing" constant="71" id="98I-AW-WuX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2ne-3a-c1X" secondAttribute="trailing" constant="50" id="GQR-a1-N23"/>
+                            <constraint firstItem="gJI-Bl-oEJ" firstAttribute="leading" secondItem="94e-lE-rg9" secondAttribute="trailing" constant="71" id="HuU-gG-rUE"/>
+                            <constraint firstItem="T88-mr-Hg8" firstAttribute="top" secondItem="gJI-Bl-oEJ" secondAttribute="bottom" constant="24" id="IMl-2D-hz1"/>
+                            <constraint firstItem="T88-mr-Hg8" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="PjD-QE-Fvm"/>
+                            <constraint firstItem="gJI-Bl-oEJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="43" id="PwA-dQ-pcg"/>
+                            <constraint firstItem="Aki-Yk-mOD" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="REG-Ii-K5f"/>
+                            <constraint firstItem="gJI-Bl-oEJ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Y3J-K5-NPN"/>
+                            <constraint firstItem="2ne-3a-c1X" firstAttribute="top" secondItem="Aki-Yk-mOD" secondAttribute="bottom" constant="59" id="YEw-RB-xdb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="direccion" destination="T88-mr-Hg8" id="iaF-Vr-fL0"/>
+                        <outlet property="nombre" destination="gJI-Bl-oEJ" id="c7O-M5-lxy"/>
+                        <outlet property="telefono" destination="Aki-Yk-mOD" id="cyW-R1-xkc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
