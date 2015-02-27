@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSb-bE-xcK">
+                                <rect key="frame" x="325" y="321" width="221" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <state key="normal" title="2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="botonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="T07-gE-EDu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3r-76-4NM">
+                                <rect key="frame" x="143" y="439" width="80" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <state key="normal" title="3" backgroundImage="Logo.jpg">
+                                    <color key="titleShadowColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="botonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mWm-NG-g3A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q13-FC-0PP">
+                                <rect key="frame" x="325" y="439" width="221" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <state key="normal" title="3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="botonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qBm-uM-yFR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="98p-Nf-f6E">
+                                <rect key="frame" x="143" y="79" width="319" height="166"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQp-Pc-I9I">
+                                <rect key="frame" x="59" y="321" width="264" height="71"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <state key="normal" title="1" backgroundImage="Blackberry-Logo.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="botonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Y0C-85-m4i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q13-FC-0PP" firstAttribute="leading" secondItem="G3r-76-4NM" secondAttribute="trailing" constant="20" id="2sE-rP-bWF"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="G3r-76-4NM" secondAttribute="bottom" constant="20" id="3F1-BK-kFt"/>
+                            <constraint firstItem="G3r-76-4NM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="71i-z6-s6O"/>
+                            <constraint firstItem="MQp-Pc-I9I" firstAttribute="top" secondItem="98p-Nf-f6E" secondAttribute="bottom" constant="76" id="75O-eb-yYA"/>
+                            <constraint firstItem="KSb-bE-xcK" firstAttribute="leading" secondItem="MQp-Pc-I9I" secondAttribute="trailing" constant="183" id="7dT-uI-UkB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KSb-bE-xcK" secondAttribute="trailing" constant="20" id="DUS-Qx-96T"/>
+                            <constraint firstItem="MQp-Pc-I9I" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="Frc-T5-BeT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q13-FC-0PP" secondAttribute="trailing" constant="20" id="Jyb-oJ-BwR"/>
+                            <constraint firstItem="G3r-76-4NM" firstAttribute="top" secondItem="MQp-Pc-I9I" secondAttribute="bottom" constant="20" id="Ly9-26-wcF"/>
+                            <constraint firstItem="q13-FC-0PP" firstAttribute="leading" secondItem="G3r-76-4NM" secondAttribute="trailing" constant="20" id="NeN-LN-Jwa"/>
+                            <constraint firstItem="98p-Nf-f6E" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="SeX-yQ-oVZ"/>
+                            <constraint firstAttribute="centerX" secondItem="98p-Nf-f6E" secondAttribute="centerX" id="Uee-JQ-Nu6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="q13-FC-0PP" secondAttribute="bottom" constant="20" id="abl-Nz-Kef"/>
+                            <constraint firstItem="q13-FC-0PP" firstAttribute="top" secondItem="KSb-bE-xcK" secondAttribute="bottom" constant="20" id="hQw-hF-v0g"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MQp-Pc-I9I" secondAttribute="bottom" constant="100" id="iz6-Pt-boF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="98p-Nf-f6E" secondAttribute="trailing" constant="117" id="mNQ-aP-sPW"/>
+                            <constraint firstItem="G3r-76-4NM" firstAttribute="top" secondItem="MQp-Pc-I9I" secondAttribute="bottom" constant="47" id="saL-8I-I1n"/>
+                            <constraint firstAttribute="centerX" secondItem="MQp-Pc-I9I" secondAttribute="centerX" id="z7Y-KK-eyn"/>
+                            <constraint firstItem="98p-Nf-f6E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="zay-yT-KWe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagenViews" destination="98p-Nf-f6E" id="uYa-nB-1NV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="309"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ayb-4R-yeO">
+            <objects>
+                <viewController id="azb-Qv-8EI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uwL-gK-dDl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tp8-Ij-FHs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IKa-Qb-jBh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cax-Ub-dKk">
+                                <rect key="frame" x="142" y="110" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFT-8t-eAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1083" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Blackberry-Logo.jpg" width="1400" height="700"/>
+        <image name="Logo.jpg" width="286" height="300"/>
+    </resources>
+</document>

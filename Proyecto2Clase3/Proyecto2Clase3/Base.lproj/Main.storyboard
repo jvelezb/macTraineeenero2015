@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Captura aqui" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zmd-dQ-tHX">
+                                <rect key="frame" x="111" y="139" width="373" height="30"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldReturn:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="Acr-bE-aRl"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwV-Vq-xvt">
+                                <rect key="frame" x="284.5" y="203" width="31" height="30"/>
+                                <state key="normal" title="Aqui">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="botonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ice-yY-akh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d54-c9-rHf">
+                                <rect key="frame" x="116" y="87" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d54-c9-rHf" firstAttribute="leading" secondItem="zmd-dQ-tHX" secondAttribute="leading" id="0Mz-me-632"/>
+                            <constraint firstItem="zmd-dQ-tHX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="119" id="Pmg-Bm-6nt"/>
+                            <constraint firstItem="zmd-dQ-tHX" firstAttribute="top" secondItem="d54-c9-rHf" secondAttribute="bottom" constant="31" id="jut-yf-8Wl"/>
+                            <constraint firstItem="fwV-Vq-xvt" firstAttribute="top" secondItem="zmd-dQ-tHX" secondAttribute="bottom" constant="34" id="nfD-eF-Oqh"/>
+                            <constraint firstAttribute="centerX" secondItem="fwV-Vq-xvt" secondAttribute="centerX" id="rO8-Zc-MFX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="campoEntrada" destination="zmd-dQ-tHX" id="aEI-hK-e9M"/>
+                        <outlet property="etiqueta" destination="d54-c9-rHf" id="xcH-54-ZyR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="308"/>
+        </scene>
+    </scenes>
+</document>

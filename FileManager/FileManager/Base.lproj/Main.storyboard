@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v3p-sn-P2c">
+                                <rect key="frame" x="21" y="37" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiY-6H-Feo">
+                                <rect key="frame" x="272" y="141" width="56" height="30"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guardaBoton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rTN-fr-31b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iiY-6H-Feo" firstAttribute="top" secondItem="v3p-sn-P2c" secondAttribute="bottom" constant="74" id="9Zr-J6-0hx"/>
+                            <constraint firstAttribute="centerX" secondItem="iiY-6H-Feo" secondAttribute="centerX" id="E77-vq-LDY"/>
+                            <constraint firstItem="v3p-sn-P2c" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="17" id="hPL-MH-j5n"/>
+                            <constraint firstAttribute="centerX" secondItem="v3p-sn-P2c" secondAttribute="centerX" id="oMW-ng-NI4"/>
+                            <constraint firstItem="v3p-sn-P2c" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" constant="5" id="yeg-uR-e6W"/>
+                            <constraint firstItem="v3p-sn-P2c" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="zpC-pa-zG2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textBox" destination="v3p-sn-P2c" id="yLF-FL-cyT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
