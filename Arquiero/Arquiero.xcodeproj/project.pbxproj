@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B90290CF1AAB5619005901F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B90290CE1AAB5619005901F9 /* main.m */; };
+		B90290D21AAB5619005901F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B90290D11AAB5619005901F9 /* AppDelegate.m */; };
+		B90290D71AAB5619005901F9 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B90290D61AAB5619005901F9 /* GameViewController.m */; };
+		B90290DA1AAB5619005901F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90290D81AAB5619005901F9 /* Main.storyboard */; };
+		B90290DC1AAB5619005901F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90290DB1AAB5619005901F9 /* Images.xcassets */; };
+		B90290DF1AAB5619005901F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B90290DD1AAB5619005901F9 /* LaunchScreen.xib */; };
+		B90290EB1AAB5619005901F9 /* ArquieroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B90290EA1AAB5619005901F9 /* ArquieroTests.m */; };
+		B90290F61AAB5855005901F9 /* WelcomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B90290F51AAB5855005901F9 /* WelcomeScene.m */; };
+		B90290F91AAB58FF005901F9 /* ArqueroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B90290F81AAB58FF005901F9 /* ArqueroScene.m */; };
+		B9FCFADA1AAB680D005E4289 /* archer.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B9FCFAD91AAB680D005E4289 /* archer.atlas */; };
+		B9FCFAE01AAB75EE005E4289 /* ArrowHitTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FCFADB1AAB75EE005E4289 /* ArrowHitTexture.png */; };
+		B9FCFAE11AAB75EE005E4289 /* ArrowTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FCFADC1AAB75EE005E4289 /* ArrowTexture.png */; };
+		B9FCFAE21AAB75EE005E4289 /* ballburst.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9FCFADD1AAB75EE005E4289 /* ballburst.mp3 */; };
+		B9FCFAE31AAB75EE005E4289 /* BallFragment.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FCFADE1AAB75EE005E4289 /* BallFragment.png */; };
+		B9FCFAE41AAB75EE005E4289 /* BallTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FCFADF1AAB75EE005E4289 /* BallTexture.png */; };
+		B9FCFAE71AAB943C005E4289 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = B9FCFAE51AAB943C005E4289 /* MyParticle.sks */; };
+		B9FCFAE81AAB943C005E4289 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FCFAE61AAB943C005E4289 /* spark.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B90290E51AAB5619005901F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B90290C11AAB5619005901F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B90290C81AAB5619005901F9;
+			remoteInfo = Arquiero;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B90290C91AAB5619005901F9 /* Arquiero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arquiero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90290CD1AAB5619005901F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B90290CE1AAB5619005901F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B90290D01AAB5619005901F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B90290D11AAB5619005901F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B90290D51AAB5619005901F9 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		B90290D61AAB5619005901F9 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		B90290D91AAB5619005901F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B90290DB1AAB5619005901F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B90290DE1AAB5619005901F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B90290E41AAB5619005901F9 /* ArquieroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArquieroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90290E91AAB5619005901F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B90290EA1AAB5619005901F9 /* ArquieroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArquieroTests.m; sourceTree = "<group>"; };
+		B90290F41AAB5855005901F9 /* WelcomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeScene.h; sourceTree = "<group>"; };
+		B90290F51AAB5855005901F9 /* WelcomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeScene.m; sourceTree = "<group>"; };
+		B90290F71AAB58FF005901F9 /* ArqueroScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArqueroScene.h; sourceTree = "<group>"; };
+		B90290F81AAB58FF005901F9 /* ArqueroScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArqueroScene.m; sourceTree = "<group>"; };
+		B9FCFAD91AAB680D005E4289 /* archer.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = archer.atlas; sourceTree = "<group>"; };
+		B9FCFADB1AAB75EE005E4289 /* ArrowHitTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowHitTexture.png; sourceTree = "<group>"; };
+		B9FCFADC1AAB75EE005E4289 /* ArrowTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowTexture.png; sourceTree = "<group>"; };
+		B9FCFADD1AAB75EE005E4289 /* ballburst.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ballburst.mp3; sourceTree = "<group>"; };
+		B9FCFADE1AAB75EE005E4289 /* BallFragment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BallFragment.png; sourceTree = "<group>"; };
+		B9FCFADF1AAB75EE005E4289 /* BallTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BallTexture.png; sourceTree = "<group>"; };
+		B9FCFAE51AAB943C005E4289 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		B9FCFAE61AAB943C005E4289 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B90290C61AAB5619005901F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90290E11AAB5619005901F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B90290C01AAB5619005901F9 = {
+			isa = PBXGroup;
+			children = (
+				B9FCFAE51AAB943C005E4289 /* MyParticle.sks */,
+				B9FCFAE61AAB943C005E4289 /* spark.png */,
+				B90290CB1AAB5619005901F9 /* Arquiero */,
+				B90290E71AAB5619005901F9 /* ArquieroTests */,
+				B90290CA1AAB5619005901F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B90290CA1AAB5619005901F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B90290C91AAB5619005901F9 /* Arquiero.app */,
+				B90290E41AAB5619005901F9 /* ArquieroTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B90290CB1AAB5619005901F9 /* Arquiero */ = {
+			isa = PBXGroup;
+			children = (
+				B90290D01AAB5619005901F9 /* AppDelegate.h */,
+				B90290D11AAB5619005901F9 /* AppDelegate.m */,
+				B90290D51AAB5619005901F9 /* GameViewController.h */,
+				B90290F41AAB5855005901F9 /* WelcomeScene.h */,
+				B90290F51AAB5855005901F9 /* WelcomeScene.m */,
+				B90290F71AAB58FF005901F9 /* ArqueroScene.h */,
+				B90290F81AAB58FF005901F9 /* ArqueroScene.m */,
+				B90290D61AAB5619005901F9 /* GameViewController.m */,
+				B90290D81AAB5619005901F9 /* Main.storyboard */,
+				B90290DB1AAB5619005901F9 /* Images.xcassets */,
+				B90290DD1AAB5619005901F9 /* LaunchScreen.xib */,
+				B90290CC1AAB5619005901F9 /* Supporting Files */,
+			);
+			path = Arquiero;
+			sourceTree = "<group>";
+		};
+		B90290CC1AAB5619005901F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9FCFADB1AAB75EE005E4289 /* ArrowHitTexture.png */,
+				B9FCFADC1AAB75EE005E4289 /* ArrowTexture.png */,
+				B9FCFADD1AAB75EE005E4289 /* ballburst.mp3 */,
+				B9FCFADE1AAB75EE005E4289 /* BallFragment.png */,
+				B9FCFADF1AAB75EE005E4289 /* BallTexture.png */,
+				B9FCFAD91AAB680D005E4289 /* archer.atlas */,
+				B90290CD1AAB5619005901F9 /* Info.plist */,
+				B90290CE1AAB5619005901F9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B90290E71AAB5619005901F9 /* ArquieroTests */ = {
+			isa = PBXGroup;
+			children = (
+				B90290EA1AAB5619005901F9 /* ArquieroTests.m */,
+				B90290E81AAB5619005901F9 /* Supporting Files */,
+			);
+			path = ArquieroTests;
+			sourceTree = "<group>";
+		};
+		B90290E81AAB5619005901F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B90290E91AAB5619005901F9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B90290C81AAB5619005901F9 /* Arquiero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B90290EE1AAB5619005901F9 /* Build configuration list for PBXNativeTarget "Arquiero" */;
+			buildPhases = (
+				B90290C51AAB5619005901F9 /* Sources */,
+				B90290C61AAB5619005901F9 /* Frameworks */,
+				B90290C71AAB5619005901F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Arquiero;
+			productName = Arquiero;
+			productReference = B90290C91AAB5619005901F9 /* Arquiero.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B90290E31AAB5619005901F9 /* ArquieroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B90290F11AAB5619005901F9 /* Build configuration list for PBXNativeTarget "ArquieroTests" */;
+			buildPhases = (
+				B90290E01AAB5619005901F9 /* Sources */,
+				B90290E11AAB5619005901F9 /* Frameworks */,
+				B90290E21AAB5619005901F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B90290E61AAB5619005901F9 /* PBXTargetDependency */,
+			);
+			name = ArquieroTests;
+			productName = ArquieroTests;
+			productReference = B90290E41AAB5619005901F9 /* ArquieroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B90290C11AAB5619005901F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Juan Velez";
+				TargetAttributes = {
+					B90290C81AAB5619005901F9 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B90290E31AAB5619005901F9 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B90290C81AAB5619005901F9;
+					};
+				};
+			};
+			buildConfigurationList = B90290C41AAB5619005901F9 /* Build configuration list for PBXProject "Arquiero" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B90290C01AAB5619005901F9;
+			productRefGroup = B90290CA1AAB5619005901F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B90290C81AAB5619005901F9 /* Arquiero */,
+				B90290E31AAB5619005901F9 /* ArquieroTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B90290C71AAB5619005901F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FCFAE81AAB943C005E4289 /* spark.png in Resources */,
+				B9FCFADA1AAB680D005E4289 /* archer.atlas in Resources */,
+				B90290DF1AAB5619005901F9 /* LaunchScreen.xib in Resources */,
+				B9FCFAE31AAB75EE005E4289 /* BallFragment.png in Resources */,
+				B9FCFAE21AAB75EE005E4289 /* ballburst.mp3 in Resources */,
+				B90290DC1AAB5619005901F9 /* Images.xcassets in Resources */,
+				B9FCFAE41AAB75EE005E4289 /* BallTexture.png in Resources */,
+				B9FCFAE11AAB75EE005E4289 /* ArrowTexture.png in Resources */,
+				B9FCFAE01AAB75EE005E4289 /* ArrowHitTexture.png in Resources */,
+				B90290DA1AAB5619005901F9 /* Main.storyboard in Resources */,
+				B9FCFAE71AAB943C005E4289 /* MyParticle.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90290E21AAB5619005901F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B90290C51AAB5619005901F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90290D21AAB5619005901F9 /* AppDelegate.m in Sources */,
+				B90290D71AAB5619005901F9 /* GameViewController.m in Sources */,
+				B90290CF1AAB5619005901F9 /* main.m in Sources */,
+				B90290F61AAB5855005901F9 /* WelcomeScene.m in Sources */,
+				B90290F91AAB58FF005901F9 /* ArqueroScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90290E01AAB5619005901F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90290EB1AAB5619005901F9 /* ArquieroTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B90290E61AAB5619005901F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B90290C81AAB5619005901F9 /* Arquiero */;
+			targetProxy = B90290E51AAB5619005901F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B90290D81AAB5619005901F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B90290D91AAB5619005901F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B90290DD1AAB5619005901F9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B90290DE1AAB5619005901F9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B90290EC1AAB5619005901F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		B90290ED1AAB5619005901F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B90290EF1AAB5619005901F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Arquiero/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B90290F01AAB5619005901F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Arquiero/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B90290F21AAB5619005901F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ArquieroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arquiero.app/Arquiero";
+			};
+			name = Debug;
+		};
+		B90290F31AAB5619005901F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ArquieroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arquiero.app/Arquiero";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B90290C41AAB5619005901F9 /* Build configuration list for PBXProject "Arquiero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B90290EC1AAB5619005901F9 /* Debug */,
+				B90290ED1AAB5619005901F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B90290EE1AAB5619005901F9 /* Build configuration list for PBXNativeTarget "Arquiero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B90290EF1AAB5619005901F9 /* Debug */,
+				B90290F01AAB5619005901F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B90290F11AAB5619005901F9 /* Build configuration list for PBXNativeTarget "ArquieroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B90290F21AAB5619005901F9 /* Debug */,
+				B90290F31AAB5619005901F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B90290C11AAB5619005901F9 /* Project object */;
+}

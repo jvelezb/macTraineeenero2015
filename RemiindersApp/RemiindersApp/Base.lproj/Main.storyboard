@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wsf-g0-UFH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ltB-2S-ZyW">
+                                <rect key="frame" x="16" y="61" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPO-P1-tcl">
+                                <rect key="frame" x="217" y="125" width="166" height="30"/>
+                                <state key="normal" title="Establecer Recordatorio">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="establecerRecordatorio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="scZ-lX-aQu"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="c3a-0P-vfk">
+                                <rect key="frame" x="0.0" y="205" width="584" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="446847383.41574001">
+                                    <!--2015-02-28 20:16:23 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c3a-0P-vfk" firstAttribute="top" secondItem="OPO-P1-tcl" secondAttribute="bottom" constant="50" id="CIh-20-qGU"/>
+                            <constraint firstItem="ltB-2S-ZyW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="GSO-vA-ifl"/>
+                            <constraint firstAttribute="centerX" secondItem="c3a-0P-vfk" secondAttribute="centerX" id="L8F-zA-0Ih"/>
+                            <constraint firstItem="ltB-2S-ZyW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="41" id="RR7-7r-Inb"/>
+                            <constraint firstAttribute="centerX" secondItem="OPO-P1-tcl" secondAttribute="centerX" id="UAR-K4-Xb5"/>
+                            <constraint firstItem="OPO-P1-tcl" firstAttribute="top" secondItem="ltB-2S-ZyW" secondAttribute="bottom" constant="34" id="VGd-kp-uoB"/>
+                            <constraint firstItem="ltB-2S-ZyW" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="dxO-df-LE7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ZkV-xk-Mew"/>
+                    <connections>
+                        <outlet property="fechaPicker" destination="c3a-0P-vfk" id="Oqs-2t-2Ux"/>
+                        <outlet property="textoRecordatorio" destination="ltB-2S-ZyW" id="aNj-aY-9Ty"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232" y="323"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="oP6-nc-JzK">
+            <objects>
+                <viewController id="Jz7-lc-f7c" customClass="Segunda" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g77-En-V9C"/>
+                        <viewControllerLayoutGuide type="bottom" id="DRO-9b-qyh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Va-X7-AoL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e02-MI-5CB">
+                                <rect key="frame" x="268" y="156" width="116" height="30"/>
+                                <state key="normal" title="Cuando me vaya">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="boton:" destination="Jz7-lc-f7c" eventType="touchUpInside" id="asQ-7T-PBL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WlS-4A-7sj">
+                                <rect key="frame" x="25" y="60" width="551" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WlS-4A-7sj" firstAttribute="top" secondItem="g77-En-V9C" secondAttribute="bottom" constant="40" id="5U8-7u-emT"/>
+                            <constraint firstItem="WlS-4A-7sj" firstAttribute="leading" secondItem="6Va-X7-AoL" secondAttribute="leadingMargin" constant="9" id="DIr-C7-15b"/>
+                            <constraint firstItem="e02-MI-5CB" firstAttribute="top" secondItem="WlS-4A-7sj" secondAttribute="bottom" constant="66" id="J7y-pX-1Kg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WlS-4A-7sj" secondAttribute="trailing" constant="8" id="UDi-jw-Hyx"/>
+                            <constraint firstAttribute="centerX" secondItem="e02-MI-5CB" secondAttribute="centerX" id="pS5-Gy-EOF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="vdD-6Z-bhc"/>
+                    <connections>
+                        <outlet property="eventoText" destination="WlS-4A-7sj" id="9Fr-Cx-Gro"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fC-9T-AGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231" y="995"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Jt7-mF-JQz">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="wsf-g0-UFH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="V3S-6F-Fmg">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="sdW-AS-TXb"/>
+                        <segue destination="Jz7-lc-f7c" kind="relationship" relationship="viewControllers" id="R06-Ie-p3X"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Hj-qd-at6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="323"/>
+        </scene>
+    </scenes>
+</document>
